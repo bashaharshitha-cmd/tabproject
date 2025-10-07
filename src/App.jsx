@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Tabproject2 from './assets/Tabproject2';
+import FormValidation from './FormValidation';
 
 
 import React from 'react'
@@ -7,7 +7,7 @@ import React from 'react'
 function App() {
   return (
     <div>App
-      <Tabproject2/>
+      <FormValidation/>
     </div>
   );
 };

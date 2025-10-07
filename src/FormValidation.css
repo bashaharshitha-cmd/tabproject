@@ -1,0 +1,49 @@
+
+
+body{
+    background-color:grey;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+.container{
+    width: 580px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0,5);
+
+
+}
+.container h2{
+    align-content: center;
+    text-align: center;
+}
+form{
+    padding: 2rem;
+}
+form.hello{
+    margin-bottom: 1rem;
+    gap: 2px;
+}
+
+form.hello input{
+    width: 100%;
+    padding: 0.7 rem;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+button.hi {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button.hi:hover {
+  background-color: #0056b3;
+}
