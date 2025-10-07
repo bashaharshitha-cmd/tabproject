@@ -1,0 +1,114 @@
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Tab buttons container */
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+/* Individual tab button */
+.tab {
+  padding: 10px 25px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #333;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.tab:hover {
+  background-color: #d5d5d5;
+}
+
+/* Active tab */
+.tab.active {
+  background-color: #6200ea;
+  color: white;
+  font-weight: bold;
+}
+
+/* Content area */
+.tab-content {
+  padding: 10px;
+}
+
+/* Each content block */
+.content {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Only show the active content */
+.active-content {
+  display: block;
+}
+
+/* Content heading and divider */
+h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #6200ea;
+  margin-bottom: 15px;
+}
+
+/* List styles */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #444;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .tab-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
